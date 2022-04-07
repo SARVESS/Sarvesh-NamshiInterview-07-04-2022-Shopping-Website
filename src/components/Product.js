@@ -19,9 +19,9 @@ export class Product extends Component {
                         <div className="row">
                             {
                                 _products.map((item,index)=>(
-                                    <div key={index} className="col-md-2" style={{marginBottom:'10px'}}>
-                                        <img src={item.image} className="img-resposive" style={{width:'100%',height:'100px'}}/>
-                                        <h5>{item.name}</h5>
+                                    <div key={index} className="col-md-5" style={{marginBottom:'10px'}}>
+                                        <img src={item.image} className="img-resposive" style={{width:'70%',height:'300px'}}/>
+                                        <h5>{item.title}</h5>
                                         <span className="badge badge-primary" style={{cursor:'pointer'}} onClick={()=>this.props.AddCart(item)}>Add Cart</span>
                                     </div>
                                 ))

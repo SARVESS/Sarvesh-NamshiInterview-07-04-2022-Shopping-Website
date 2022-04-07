@@ -15,11 +15,11 @@ export class Header extends Component {
                    { this.props.categories && (<nav className="navbar  navbar-dark bg-dark ">
                      <ul className="nav">
                       {this.props.categories.map((category) => {
-                           return (<li className="nav-item" >{category}</li>)
+                           return (<li className="nav-item" style={{ marginLeft: '20px', color: 'white' }} >{category}</li>)
                       })}     
                      </ul>
                   </nav>) }
-                  <nav className="navbar  navbar-dark bg-dark ">
+                  <nav className="navbar ">
                         <ul className="nav">
                             <li className="nav-item" ><Link to="/" className="nav-link active">Products</Link></li>
                             <li className="nav-item"><Link to="/carts" className="nav-link">Carts : {this.props.numberCart}</Link></li>
