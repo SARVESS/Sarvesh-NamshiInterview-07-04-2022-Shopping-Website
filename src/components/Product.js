@@ -22,6 +22,7 @@ export class Product extends Component {
                                     <div key={index} className="col-md-5" style={{marginBottom:'10px'}}>
                                         <img src={item.image} className="img-resposive" style={{width:'70%',height:'300px'}}/>
                                         <h5>{item.title}</h5>
+                                        <h5>${item.price.toFixed(2)}</h5>
                                         <span className="badge badge-primary" style={{cursor:'pointer'}} onClick={()=>this.props.AddCart(item)}>Add Cart</span>
                                     </div>
                                 ))
